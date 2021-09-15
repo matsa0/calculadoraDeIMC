@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset ="utf-8">   
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Projeto Calculadora de IMC</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <!--Title-->
+            <h1 id="title">Calculadora de IMC</h1>
+            <!--Form-->
+            <form action="processa.php" method="post" id='form'>
+                <div class="input">
+                    <label>Nome:<input type="text" id='nome'></label> 
+                </div>
+                <br>
+                <br>
+                <div class="input">
+                    <label>Peso:<input type="number" id='peso'></label>
+                    
+                </div>         
+                <br>
+                <br>
+                <div class="input">
+                    <label>Altura:<input type="number" id='altura'></label>
+                </div>
+            </form>
+        
+            <!--Button-->
+            <button type="button" value="text" id='button'>Calcular</button>
+
+            <!--Description-->
+            <div class="result" id="resultado"></div>
+        </div>
+    </main>
+    <script type="text/javascript" src="sistema.js">
+    </script>
+</body>
+</html>
